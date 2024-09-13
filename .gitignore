@@ -21,7 +21,6 @@ dist/
 .eggs/
 
 # Poetry specific files
-poetry.lock
 .poetry/
 
 # Unit test / coverage reports
