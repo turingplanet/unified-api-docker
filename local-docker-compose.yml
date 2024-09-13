@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - ./mongodb_dump:/mongodb_dump
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+  backend:
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      MONGO_URI: "mongodb://root:example@mongo:27017"
+      OPENAI_KEY: "sk-abc123XYZ456random789keyEXAMPLE"
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:
+

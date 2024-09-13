@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"8c29d916fcd74371a11ec6f94c89952e","collectionName":"stock_weekly_data","type":"collection"}

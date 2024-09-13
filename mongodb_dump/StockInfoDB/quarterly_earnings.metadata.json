@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"0ecd16a96a7b43a0baa6ebd560384160","collectionName":"quarterly_earnings","type":"collection"}
